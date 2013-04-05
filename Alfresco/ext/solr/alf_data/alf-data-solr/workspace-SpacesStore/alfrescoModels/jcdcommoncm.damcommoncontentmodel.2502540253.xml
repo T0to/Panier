@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.alfresco.org/model/dictionary/1.0" name="jcdcommoncm:damcommoncontentmodel">
+    <description>Dam Common Content Model</description>
+    <author>JCDECAUX</author>
+    <published>2012-12-05</published>
+    <version>1.0</version>
+    <imports>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <import uri="http://www.alfresco.org/model/exif/1.0" prefix="exif"/>
+    </imports>
+    <namespaces>
+        <namespace uri="http://www.jcdecaux.com/commoncontent/1.0" prefix="jcdcommoncm"/>
+    </namespaces>
+    <data-types/>
+    <constraints/>
+    <types>
+        <type name="jcdcommoncm:content">
+            <title>JCD Common Content</title>
+            <parent>cm:content</parent>
+            <properties>
+                <property name="jcdcommoncm:innovate">
+                    <title>Innovate</title>
+                    <type>d:boolean</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true"/>
+                </property>
+                <property name="jcdcommoncm:premium">
+                    <title>Premium</title>
+                    <type>d:boolean</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true"/>
+                </property>
+                <property name="jcdcommoncm:test">
+                    <title>Categories Tests</title>
+                    <type>d:category</type>
+                    <mandatory>false</mandatory>
+                    <multiple>true</multiple>
+                    <index enabled="true"/>
+                </property>
+            </properties>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects>
+                <aspect>cm:generalclassifiable</aspect>
+            </mandatory-aspects>
+        </type>
+        <type name="jcdcommoncm:image">
+            <title>JCD Common Image</title>
+            <parent>jcdcommoncm:content</parent>
+            <properties>
+                <property name="jcdcommoncm:photoDate">
+                    <title>Photo date</title>
+                    <type>d:date</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="true"/>
+                </property>
+            </properties>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects>
+                <aspect>exif:exif</aspect>
+            </mandatory-aspects>
+        </type>
+        <type name="jcdcommoncm:flash">
+            <title>JCD Common Flash media</title>
+            <parent>jcdcommoncm:content</parent>
+            <properties/>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects/>
+        </type>
+        <type name="jcdcommoncm:video">
+            <title>JCD Common Video media</title>
+            <parent>jcdcommoncm:content</parent>
+            <properties>
+                <property name="jcdcommoncm:presenceOfSound">
+                    <title>Presence of sound</title>
+                    <type>d:boolean</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true"/>
+                </property>
+                <property name="jcdcommoncm:durationOfTheSpot">
+                    <title>Duration of the spot (in seconds)</title>
+                    <type>d:int</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true"/>
+                </property>
+            </properties>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects/>
+        </type>
+    </types>
+    <aspects>
+        <aspect name="jcdcommoncm:classifiable">
+            <title>My Classification</title>
+            <parent>cm:classifiable</parent>
+            <properties>
+                <property name="jcdcommoncm:categories">
+                    <title>Categories</title>
+                    <type>d:category</type>
+                    <mandatory>false</mandatory>
+                    <multiple>true</multiple>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>true</stored>
+                        <tokenised>TRUE</tokenised>
+                    </index>
+                </property>
+            </properties>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects/>
+        </aspect>
+        <aspect name="jcdcommoncm:cattranslatable">
+            <title>Translatable</title>
+            <properties>
+                <property name="jcdcommoncm:translation">
+                    <title>Translation</title>
+                    <type>d:mltext</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>BOTH</tokenised>
+                    </index>
+                </property>
+            </properties>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects/>
+        </aspect>
+    </aspects>
+</model>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<document>
+	<name>exemple</name>
+	<titre>exemple</titre>
+	<description>exemple QUI MARHCE PAS</description>
+	<createur>Thomas Colle</createur>
+	<infosgenerique>
+		<type>Questionnaire de recrutement</type>
+		<origine>X3</origine>
+		<x3num>123</x3num>
+	</infosgenerique>
+	<divers>
+		<devis>12345</devis>
+	</divers>
+	<projet>
+		<num>123</num>
+		<site>AIX</site>
+		<affaire>affaire1</affaire>
+	</projet>
+</document>
+				

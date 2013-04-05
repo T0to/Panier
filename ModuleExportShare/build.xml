@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<project name="Share AMP" default="update-custom-share-webscripts-quickly" basedir="." >
+	<!--Debut Ajout Smile-->
+	
+	<property file="build.properties" />
+	
+	<!--Fin Ajout Smile-->
+		
+	
+    <property name="build.dir" value="${projectShareAMP.dir}/build"/>
+    <property name="config.dir" value="${projectShareAMP.dir}/config"/> 
+	<property name="build.ShareAMP.dir" value="${projectShareAMP.dir}/build"/>
+    <property name="amp.file" value="${build.ShareAMP.dir}/dist/${share.amp.name}"/>
+	<property name="build.libs.dir" value="${projectAlfresco.dir}/ext/build-libs"/>
+	
+    <!--Debut Ajout Smile -->	
+    	<target name="clean" depends="rmdirs,mkdirs" />    	
+	<!--Fin Ajout Smile-->	
+		
+    <!--Debut Ajout Smile-->	
+	 <target name="rmdirs">
+	 	<delete dir="${build.dir}" />
+	 </target>	
+    <!--Fin Ajout Smile-->
+    	
+    <target name="mkdirs">
+        <mkdir dir="${build.dir}" /> 
+    	<mkdir dir="${build.dir}/dist" />
+    </target>    
+	<!--Debut Modif Smile-->
+    <target name="package-amp" depends="rmdirs,mkdirs" description="Package the Module" >
+    	<delete file="${amp.file}" />
+        <zip destfile="${amp.file}" >            
+        	<!--Debut Modif Smile -->
+            <fileset dir="${projectShareAMP.dir}" includes="config/**/*.*" excludes="**/module.properties,**/file-mapping.properties" />
+        	<fileset dir="${projectShareAMP.dir}" includes="web/**/*.*" />
+        	<fileset dir="${projectShareAMP.dir}" includes="WEB-INF/**/*.*" />
+            <fileset dir="${projectShareAMP.dir}/config/module" includes="module.properties,file-mapping.properties" />
+        	<!--Fin Modif SMile -->
+        </zip>
+    </target>
+
+	<path id="class.path">
+			<fileset dir="${alfresco-sdk-libs-server}">
+				<include name="**/*.jar" />
+			</fileset>	
+			<fileset dir="${build.libs.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+	
+    <target name="update-war" depends="package-amp" description="Update the WAR file.  Set -Dwar.file=..." >
+    	
+        <echo>Installing Share AMP into Share WAR</echo>
+        
+    	<delete dir="${alfresco.tomcat.patch.dir}/work" />
+    	<delete dir="${alfresco.tomcat.patch.dir}/webapps/share" />
+    	<!--<delete file="${alfresco.tomcat.patch.dir}/webapps/*.bak" />-->
+    	<java dir="." fork="true" classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+            <classpath refid="class.path" />
+            <!--Debut Modif Smile -->
+			<arg line="install ${amp.file} ${alfresco.tomcat.patch.dir}/webapps/share.war -force -verbose"/>
+			<!--Fin Modif SMile -->
+        </java>
+    </target>
+	
+	<target name="update-custom-share-webscripts-quickly">
+			<copydir dest="${alfresco.tomcat.patch.dir}/webapps/share/WEB-INF/classes/alfresco/site-webscripts/org/alfresco/module" forceoverwrite="true" src="${projectShareAMP.dir}/config/alfresco/site-webscripts/org/alfresco/module/${share.module.id}"></copydir>
+		</target>
+
+</project>

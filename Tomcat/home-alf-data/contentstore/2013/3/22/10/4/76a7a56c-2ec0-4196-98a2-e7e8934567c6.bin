@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<name>Fiche_produit_101641001_FM10194</name>
+<titre>Fiche produit 101641001 FM10194</titre>
+<description>FICHE PRODUIT REF 101641001</description>
+<createur>Marylène DAUNIZEAU</createur>
+<infosgenerique>
+<type>Fiche produit</type>
+<origine>X3</origine>
+</infosgenerique>
+<fournisseur>
+<num>FM10194</num>
+<cat>MARCH</cat>
+<nom>METALIC EQUIPEMENT</nom>
+</fournisseur>
+<divers>
+</divers>
+<projet>
+</projet>
+<validite>
+<start>2012-01-01</start>
+<end>2012-05-15</end>
+</validite>
+<articleMaitre>101641</articleMaitre>
+<article>
+<ref>101641001</ref>
+<univers>812</univers>
+<secteur>80805</secteur>
+<designation>Abri Metallo -Simple sans bardage -</designation>
+</article>
+<client>
+</client>
+</document>

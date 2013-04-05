@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<name>Certificat_environnemental_9248_25373</name>
+<titre>Certificat environnemental 9248 25373</titre>
+<description>certificat environnemental ARTICLE MAIRE 25373</description>
+<createur>Marylène DAUNIZEAU</createur>
+<infosgenerique>
+<type>Certificat environnemental</type>
+<origine>X3</origine>
+</infosgenerique>
+<fournisseur>
+<num>9248</num>
+<cat>MARCH</cat>
+<nom>TECHNI BUREAU</nom>
+</fournisseur>
+<divers>
+</divers>
+<projet>
+</projet>
+<validite>
+<start>2002-01-01</start>
+<end>2025-05-01</end>
+</validite>
+<articleMaitre>25373</articleMaitre>
+<article>
+<ref>919980D</ref>
+<univers>810</univers>
+<secteur>80105</secteur>
+<designation>BUR. DROIT 4 PIEDS 140 ATHON T.1347</designation>
+</article>
+<article>
+<ref>919981A</ref>
+<univers>810</univers>
+<secteur>80105</secteur>
+<designation>BUR. DROIT 4 PIEDS 140 ATHON T.1348</designation>
+</article>
+<article>
+<ref>919983N</ref>
+<univers>810</univers>
+<secteur>80105</secteur>
+<designation>BUR. DROIT 4 PIEDS 140 ATHON T.5005</designation>
+</article>
+<article>
+<ref>919985H</ref>
+<univers>810</univers>
+<secteur>80105</secteur>
+<designation>BUR. DROIT 4 PIEDS 140 ATHON T.1610</designation>
+</article>
+<client>
+</client>
+</document>

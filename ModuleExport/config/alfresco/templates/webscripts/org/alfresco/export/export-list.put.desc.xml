@@ -1,0 +1,8 @@
+<webscript>
+  <shortname>export-list</shortname>
+  <description>Add a document to user's list</description>
+  <url>/export/list/put</url>
+  <format default="json">argument</format>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+</webscript>

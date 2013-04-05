@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<name>Doc_commerciale_frs_100581011_4261</name>
+<titre>Doc commerciale frs 100581011 4261</titre>
+<description>DOC COMMERCIALE REF 100581011</description>
+<createur>Marylène DAUNIZEAU</createur>
+<infosgenerique>
+<type>Doc commerciale frs</type>
+<origine>X3</origine>
+</infosgenerique>
+<fournisseur>
+<num>4261</num>
+<cat>MARCH</cat>
+<nom>IXAM FRANCE</nom>
+</fournisseur>
+<divers>
+</divers>
+<projet>
+</projet>
+<validite>
+<start>2013-05-05</start>
+<end>2015-11-10</end>
+</validite>
+<articleMaitre>100581</articleMaitre>
+<client>
+</client>
+</document>

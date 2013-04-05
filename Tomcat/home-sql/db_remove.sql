@@ -1,0 +1,1 @@
+drop database camif_alfresco_4_1_2;

@@ -1,0 +1,260 @@
+<HTML><HEAD><STYLE>TD{font-size:11px}TD.ent{font-size:11px;font-weight:bold;background:#78A7F5}TD.ent2{font-size:11px;font-weight:bold;background:#00FF00}TD.gauche{font-size:11px;text-align:left}TD.rouge{font-size:11px;color:#FF0000}TD.delai{font-size:11px;background:#FF8040}TD.n32{font-size:11px;text-align:right;vnd.ms-excel.numberformat:# ##0.00;}</STYLE></HEAD>
+<BODY>
+<TABLE border=1 cellspacing=0>
+<TR><TD class='ent'>N° Ligne</TD><TD class='ent'>Réf. Com.</TD><TD class='ent'>Réf. Physique</TD><TD class='ent'>Désignation</TD><TD class='ent'>UV</TD><TD class='ent'>Four.</TD><TD class='ent'>Raison Sociale</TD><TD class='ent'>Qté Cde</TD><TD class='ent'>Site Exp</TD><TD class='ent'>Etat</TD><TD class='ent'>Mise à dispo</TD><TD class='ent'>Date liv prévue</TD><TD class='ent'>Deb. liv.</TD><TD class='ent'>Fin liv.</TD><TD class='ent'>Corresp. Délai</TD><TD class='ent2' colspan='2'>Date Souhaitées</TD></TR>
+<TR><TD>1</TD><TD>900153880</TD><TD class='gauche'>900153880</TD><TD>Table ovale 120*90 T4 4Pieds pl coquille  uf/turquoise 5018</TD><TD>UN</TD><TD>9167</TD><TD>S.M.M.</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;7)</TD><TD class='delai'>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;22)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>3</TD><TD>900122407</TD><TD class='gauche'>900122407</TD><TD>Chaise TREVISE 4 pieds T4 TURQUOISE 5018</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>6</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>5</TD><TD>800001240</TD><TD class='gauche'>800001240</TD><TD>Banc assise 3 lames sans dossier CCE 200 cms T4 5018</TD><TD>UN</TD><TD>8603</TD><TD>RODET SAS</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;10)</TD><TD class='delai'>=DATE(2013;1;21)</TD><TD>=DATE(2013;1;21)</TD><TD>=DATE(2013;1;25)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>7</TD><TD>900153880</TD><TD class='gauche'>900153880</TD><TD>Table ovale 120*90 T4 4Pieds pl coquille  uf/turquoise 5018</TD><TD>UN</TD><TD>9167</TD><TD>S.M.M.</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;7)</TD><TD class='delai'>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;22)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>9</TD><TD>900153837</TD><TD class='gauche'>900153837</TD><TD>Table Gange 70*50 T4 pl coquille  uf/5018+ crochet</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>3</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>11</TD><TD>900143487</TD><TD class='gauche'>900143487</TD><TD>Casier individuel tôle</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>3</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>13</TD><TD>900122407</TD><TD class='gauche'>900122407</TD><TD>Chaise TREVISE 4 pieds T4 TURQUOISE 5018</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>6</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>15</TD><TD>EH00168M</TD><TD class='gauche'>100016009</TD><TD>Armoire L 120 soc tub 5018</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>17</TD><TD>EH00158R</TD><TD class='gauche'>100019005</TD><TD>Armoire bibliothèque soc tub 5018</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>19</TD><TD>800001240</TD><TD class='gauche'>800001240</TD><TD>Banc assise 3 lames sans dossier CCE 200 cms T4 5018</TD><TD>UN</TD><TD>8603</TD><TD>RODET SAS</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;10)</TD><TD class='delai'>=DATE(2013;1;21)</TD><TD>=DATE(2013;1;21)</TD><TD>=DATE(2013;1;25)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>21</TD><TD>900153838</TD><TD class='gauche'>900153838</TD><TD>Table Gange 70*50 T5 pl coquille  uf/5015+ crochet</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>4</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>23</TD><TD>900153839</TD><TD class='gauche'>900153839</TD><TD>Table Gange 130*50 T5 pl coquille  uf/5015+crochet</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>13</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>25</TD><TD>900143487</TD><TD class='gauche'>900143487</TD><TD>Casier individuel tôle</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>30</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>27</TD><TD>EX17103J</TD><TD class='gauche'>551910B</TD><TD>Chaise NILA fixeT5 le lot  de 4 C.5015</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>8</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>29</TD><TD>900153881</TD><TD class='gauche'>900153881</TD><TD>Table ovale 120*90 T5 4Pieds pl coquille  uf/BLEU 5015</TD><TD>UN</TD><TD>9167</TD><TD>S.M.M.</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;7)</TD><TD class='delai'>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;22)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>31</TD><TD>900153841</TD><TD class='gauche'>900153841</TD><TD>Chaise TREVISE 4 pieds T5 BLEU 5015</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>6</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>33</TD><TD>800001241</TD><TD class='gauche'>800001241</TD><TD>Banc assise 3 lames sans dossier CCE 200 cms T5 5015</TD><TD>UN</TD><TD>8603</TD><TD>RODET SAS</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;10)</TD><TD class='delai'>=DATE(2013;1;21)</TD><TD>=DATE(2013;1;21)</TD><TD>=DATE(2013;1;25)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>35</TD><TD>7050119A</TD><TD class='gauche'>504450D</TD><TD>CHLOE-Bibliothèque marque CCE T.5015</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>3</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>37</TD><TD>900153843</TD><TD class='gauche'>900153843</TD><TD>Chaire NOVA av/bloc tiroirs coquille  uf/5015</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>39</TD><TD>900153696</TD><TD class='gauche'>900153696</TD><TD>Caisson 1 porte av moraillon porte cartable/coquille  uf</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>41</TD><TD>900153880</TD><TD class='gauche'>900153880</TD><TD>Table ovale 120*90 T4 4Pieds pl coquille  uf/turquoise 5018</TD><TD>UN</TD><TD>9167</TD><TD>S.M.M.</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;7)</TD><TD class='delai'>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;22)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>43</TD><TD>900122407</TD><TD class='gauche'>900122407</TD><TD>Chaise TREVISE 4 pieds T4 TURQUOISE 5018</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>6</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>45</TD><TD>900143486</TD><TD class='gauche'>900143486</TD><TD>Table NIGER reglable  1pl DL coquille d  uf 5018 Turquoise</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>47</TD><TD>7053696D</TD><TD class='gauche'>551862P</TD><TD>Lot 2 chaises réglables Nila T.5018</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;11;29)</TD><TD class='delai'>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;14)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>49</TD><TD>900153846</TD><TD class='gauche'>900153846</TD><TD>Table Gange 130*50 T6 pl coquille  uf/5015+crochet</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>13</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>51</TD><TD>900153847</TD><TD class='gauche'>900153847</TD><TD>Table Gange 70*50 T6 pl coquille  uf/5015+ crochet</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>5</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>53</TD><TD>900143487</TD><TD class='gauche'>900143487</TD><TD>Casier individuel tôle</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>31</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>55</TD><TD>900153882</TD><TD class='gauche'>900153882</TD><TD>Table ovale 120*90 T6 4Pieds pl coquille  uf/BLEU 5015</TD><TD>UN</TD><TD>9167</TD><TD>S.M.M.</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;7)</TD><TD class='delai'>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;22)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>57</TD><TD>900122406</TD><TD class='gauche'>900122406</TD><TD>Chaise TREVISE 4 pieds T6 BLEU 5015</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>6</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>59</TD><TD>EH00168M</TD><TD class='gauche'>100016008</TD><TD>Armoire L 120 soc tub 5015</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>61</TD><TD>EH00162N</TD><TD class='gauche'>100018011</TD><TD>Meuble bas portes battantes soc tub 5015</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>3</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>63</TD><TD>900153843</TD><TD class='gauche'>900153843</TD><TD>Chaire NOVA av/bloc tiroirs coquille  uf/5015</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>65</TD><TD>900153696</TD><TD class='gauche'>900153696</TD><TD>Caisson 1 porte av moraillon porte cartable/coquille  uf</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>67</TD><TD>800001243</TD><TD class='gauche'>800001243</TD><TD>Banc assise 3 lames sans dossier CCE 200 cms T6 5015</TD><TD>UN</TD><TD>8603</TD><TD>RODET SAS</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;10)</TD><TD class='delai'>=DATE(2013;1;21)</TD><TD>=DATE(2013;1;21)</TD><TD>=DATE(2013;1;25)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>69</TD><TD>900153848</TD><TD class='gauche'>900153848</TD><TD>Table niger 1pl DL pl coquiille doeuf /5015</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>14</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>71</TD><TD>7053696D</TD><TD class='gauche'>551864J</TD><TD>Lot 2chaises réglables Nila T.5015</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>7</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;11;29)</TD><TD class='delai'>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;14)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>73</TD><TD>800001244</TD><TD class='gauche'>800001244</TD><TD>Table MALIBU chts alaisés 4p diam 120 T5 5015 coq. d'oeuf</TD><TD>UN</TD><TD>9167</TD><TD>S.M.M.</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;7)</TD><TD class='delai'>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;22)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>75</TD><TD>7053696D</TD><TD class='gauche'>551864J</TD><TD>Lot 2chaises réglables Nila T.5015</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>3</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;11;29)</TD><TD class='delai'>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;14)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>77</TD><TD>900109192</TD><TD class='gauche'>900109192</TD><TD>Bloc rangement vertical + glissières pour 16 bacs plastique (livré nu)</TD><TD>UN</TD><TD>6064</TD><TD>BOISSIER</TD><TD>3</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>79</TD><TD>7265568H</TD><TD class='gauche'>265568H</TD><TD>Lot 4 bacs 22 cm  transparents</TD><TD>UN</TD><TD>8521</TD><TD>GRATNELL'S</TD><TD>3</TD><TD>MGT</TD><TD></TD><TD>=DATE(2012;11;23)</TD><TD class='delai'>=DATE(2012;12;3)</TD><TD>=DATE(2012;12;3)</TD><TD>=DATE(2012;12;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>81</TD><TD>7265556T</TD><TD class='gauche'>265556T</TD><TD>Lot 4 bacs 15 cm transparents</TD><TD>UN</TD><TD>8521</TD><TD>GRATNELL'S</TD><TD>3</TD><TD>MGT</TD><TD></TD><TD>=DATE(2012;11;23)</TD><TD class='delai'>=DATE(2012;12;3)</TD><TD>=DATE(2012;12;3)</TD><TD>=DATE(2012;12;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>83</TD><TD>7265549N</TD><TD class='gauche'>265549N</TD><TD>Lot 4 bacs 7,5 cm transparents</TD><TD>UN</TD><TD>8521</TD><TD>GRATNELL'S</TD><TD>6</TD><TD>MGT</TD><TD></TD><TD>=DATE(2012;11;23)</TD><TD class='delai'>=DATE(2012;12;3)</TD><TD>=DATE(2012;12;3)</TD><TD>=DATE(2012;12;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>85</TD><TD>EH00168M</TD><TD class='gauche'>100016008</TD><TD>Armoire L 120 soc tub 5015</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>87</TD><TD>7050119A</TD><TD class='gauche'>504450D</TD><TD>CHLOE-Bibliothèque marque CCE T.5015</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>89</TD><TD>EX18111A</TD><TD class='gauche'>659423R</TD><TD>Présent. mur. l'unité .5x1/3 A4 T.1337</TD><TD>UN</TD><TD>4543</TD><TD>PAPERFLOW</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;11;30)</TD><TD class='delai'>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;14)</TD><TD>CF66.Catherine GUESDON</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>91</TD><TD>EX18110D</TD><TD class='gauche'>659421D</TD><TD>Présent. mur. l'unité .5xA5 T.1337</TD><TD>UN</TD><TD>4543</TD><TD>PAPERFLOW</TD><TD>3</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;11;30)</TD><TD class='delai'>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;14)</TD><TD>CF66.Catherine GUESDON</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>93</TD><TD>EH00168M</TD><TD class='gauche'>100016006</TD><TD>Armoire L 120 soc tub 3000</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>95</TD><TD>EH00168M</TD><TD class='gauche'>100016007</TD><TD>Armoire L 120 soc tub 1023</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>97</TD><TD>EH00168M</TD><TD class='gauche'>100016008</TD><TD>Armoire L 120 soc tub 5015</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>99</TD><TD>EH00168M</TD><TD class='gauche'>100016009</TD><TD>Armoire L 120 soc tub 5018</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>101</TD><TD>900153849</TD><TD class='gauche'>900153849</TD><TD>Table Bandana 200*80 T6 DL plateau anti bruit beige / ?</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>5</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>103</TD><TD>800001245</TD><TD class='gauche'>800001245</TD><TD>Banc assise 3 lames sans dossier CCE 200 cms T6 1023</TD><TD>UN</TD><TD>8603</TD><TD>RODET SAS</TD><TD>10</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;10)</TD><TD class='delai'>=DATE(2013;1;21)</TD><TD>=DATE(2013;1;21)</TD><TD>=DATE(2013;1;25)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>105</TD><TD>900153842</TD><TD class='gauche'>900153842</TD><TD>Chaise TREVISE 4 pieds ?</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>6</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>107</TD><TD>7050118D</TD><TD class='gauche'>504448A</TD><TD>CHLOE-Armoire marque propre CCE T.1023</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>2</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>109</TD><TD>900153844</TD><TD class='gauche'>900153844</TD><TD>Chaire NOVA av/bloc tiroirs coquille  uf/?</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>111</TD><TD>900109192</TD><TD class='gauche'>900109192</TD><TD>Bloc rangement vertical + glissières pour 16 bacs plastique (livré nu)</TD><TD>UN</TD><TD>6064</TD><TD>BOISSIER</TD><TD>2</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>113</TD><TD>7265566N</TD><TD class='gauche'>265566N</TD><TD>Lot 4 couvercles</TD><TD>UN</TD><TD>8521</TD><TD>GRATNELL'S</TD><TD>2</TD><TD>MGT</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>115</TD><TD>7265568H</TD><TD class='gauche'>265568H</TD><TD>Lot 4 bacs 22 cm  transparents</TD><TD>UN</TD><TD>8521</TD><TD>GRATNELL'S</TD><TD>3</TD><TD>MGT</TD><TD></TD><TD>=DATE(2012;11;23)</TD><TD class='delai'>=DATE(2012;12;3)</TD><TD>=DATE(2012;12;3)</TD><TD>=DATE(2012;12;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>117</TD><TD>EX14983N</TD><TD class='gauche'>390849M</TD><TD>Rayonnage tabl drtes Kaliss Mixte dble face init 1,80m</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;18)</TD><TD class='delai'>=DATE(2013;1;28)</TD><TD>=DATE(2013;1;28)</TD><TD>=DATE(2013;2;1)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>119</TD><TD>EX14987T</TD><TD class='gauche'>390845H</TD><TD>Rayonnage tabl drtes Kaliss Mixte dble face cplt 1,80m</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;18)</TD><TD class='delai'>=DATE(2013;1;28)</TD><TD>=DATE(2013;1;28)</TD><TD>=DATE(2013;2;1)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>121</TD><TD>EX14975M</TD><TD class='gauche'>390862H</TD><TD>Rayonnage tabl drtes Kaliss Mixte sple face init 1,80m</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>3</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;18)</TD><TD class='delai'>=DATE(2013;1;28)</TD><TD>=DATE(2013;1;28)</TD><TD>=DATE(2013;2;1)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>123</TD><TD>EX14979R</TD><TD class='gauche'>390857N</TD><TD>Rayonnage tabl drtes Kaliss Mixte sple face cplt 1,80m</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>10</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;18)</TD><TD class='delai'>=DATE(2013;1;28)</TD><TD>=DATE(2013;1;28)</TD><TD>=DATE(2013;2;1)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>125</TD><TD>EX14995A</TD><TD class='gauche'>390829B</TD><TD>Rayonnage tabl incl. Kaliss Mixte sple face cplt 1,80m</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>3</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;18)</TD><TD class='delai'>=DATE(2013;1;28)</TD><TD>=DATE(2013;1;28)</TD><TD>=DATE(2013;2;1)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>127</TD><TD>EX14907B</TD><TD class='gauche'>102195015</TD><TD>Lot 2 joues habillage Kaliss 1,80 m   9190</TD><TD>UN</TD><TD>9413</TD><TD>LES MOBILIERS MMO</TD><TD>4</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;18)</TD><TD class='delai'>=DATE(2013;1;28)</TD><TD>=DATE(2013;1;28)</TD><TD>=DATE(2013;2;1)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>129</TD><TD>0055018H</TD><TD class='gauche'>561935B</TD><TD>banquet 2 pl diabolo J T.2109</TD><TD>UN</TD><TD>8393</TD><TD>RB2 CREATIONS</TD><TD>2</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;5)</TD><TD class='delai'>=DATE(2012;12;14)</TD><TD>=DATE(2012;12;14)</TD><TD>=DATE(2012;12;20)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>131</TD><TD>0055019B</TD><TD class='gauche'>561955M</TD><TD>banquet 3 pl diabolo J T.2110</TD><TD>UN</TD><TD>8393</TD><TD>RB2 CREATIONS</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;5)</TD><TD class='delai'>=DATE(2012;12;14)</TD><TD>=DATE(2012;12;14)</TD><TD>=DATE(2012;12;20)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>133</TD><TD>900154282</TD><TD class='gauche'>900154282</TD><TD>Chauffeuse angle 90  diabolo Junior</TD><TD>UN</TD><TD>8393</TD><TD>RB2 CREATIONS</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;10)</TD><TD class='delai'>=DATE(2012;12;21)</TD><TD>=DATE(2012;12;21)</TD><TD>=DATE(2012;12;28)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>135</TD><TD>900153882</TD><TD class='gauche'>900153882</TD><TD>Table ovale 120*90 T? 4Pieds pl coquille  uf/?</TD><TD>UN</TD><TD>9167</TD><TD>S.M.M.</TD><TD>2</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;7)</TD><TD class='delai'>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;16)</TD><TD>=DATE(2013;1;22)</TD><TD>CF60.Béatrice FOUET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>137</TD><TD>900153840</TD><TD class='gauche'>900153840</TD><TD>Chaise TREVISE 4 pieds T4 ROUGE 3020</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>12</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>139</TD><TD>900153845</TD><TD class='gauche'>900153845</TD><TD>Chaire NOVA av/bloc tiroirs coquille  uf/ROUGE 3020</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>141</TD><TD>900153696</TD><TD class='gauche'>900153696</TD><TD>Caisson 1 porte av moraillon porte cartable/coquille  uf</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;20)</TD><TD class='delai'>=DATE(2012;12;31)</TD><TD>=DATE(2012;12;31)</TD><TD>=DATE(2013;1;7)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>143</TD><TD>EX16372J</TD><TD class='gauche'>976626T</TD><TD>Kim classic c/p anthra fauteuil T.0260</TD><TD>UN</TD><TD>7120</TD><TD>SOKOA</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;3)</TD><TD class='delai'>=DATE(2012;12;12)</TD><TD>=DATE(2012;12;12)</TD><TD>=DATE(2012;12;18)</TD><TD>CF67.Patricia GACHET</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>145</TD><TD>900153850</TD><TD class='gauche'>900153850</TD><TD>Table Bandana 200*80 T? DL plateau anti bruit beige / rouge 3020</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>147</TD><TD>900153842</TD><TD class='gauche'>900153842</TD><TD>Chaise TREVISE 4 pieds ?</TD><TD>UN</TD><TD>4826</TD><TD>SIMIRE</TD><TD>16</TD><TD>FOU</TD><TD></TD><TD>=DATE(2013;1;8)</TD><TD class='delai'>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;17)</TD><TD>=DATE(2013;1;23)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>149</TD><TD>EX14492J</TD><TD class='gauche'>102063002</TD><TD>Présentoir porte escamotable  noir/gris</TD><TD>UN</TD><TD>4543</TD><TD>PAPERFLOW</TD><TD>8</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;24)</TD><TD>=DATE(2012;12;31)</TD><TD>CF66.Catherine GUESDON</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>151</TD><TD>EX04995M</TD><TD class='gauche'>980520M</TD><TD>Bureau asymétriquePIE.MELA .à gauche 160 T.1315</TD><TD>UN</TD><TD>9239</TD><TD>SIMMOB</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;11;29)</TD><TD class='delai'>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;14)</TD><TD>CF02.Natacha DELANNOY</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>153</TD><TD>EX04978M</TD><TD class='gauche'>895762D</TD><TD>Extension rectangul. 60x80 cm T.1315</TD><TD>UN</TD><TD>9239</TD><TD>SIMMOB</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;11;29)</TD><TD class='delai'>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;14)</TD><TD>CF02.Natacha DELANNOY</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>155</TD><TD>EX05013T</TD><TD class='gauche'>979080D</TD><TD>Le caisson hauteur bureau 80 cm T.1315</TD><TD>UN</TD><TD>9239</TD><TD>SIMMOB</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;11;29)</TD><TD class='delai'>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;14)</TD><TD>CF02.Natacha DELANNOY</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>157</TD><TD>EX05011H</TD><TD class='gauche'>554377A</TD><TD>Caisson mobile   .3 tiroirs T.1315</TD><TD>UN</TD><TD>9239</TD><TD>SIMMOB</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;11;29)</TD><TD class='delai'>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;14)</TD><TD>CF02.Natacha DELANNOY</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>159</TD><TD>895015M</TD><TD class='gauche'>102460002</TD><TD>Support UC universel  anthracite</TD><TD>UN</TD><TD>0287</TD><TD>HOUDELOT EURO INDUSTRIE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;13)</TD><TD class='delai'>=DATE(2012;12;17)</TD><TD>=DATE(2012;12;17)</TD><TD>=DATE(2012;12;21)</TD><TD>CF66.Catherine GUESDON</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>160</TD><TD>EX05546P</TD><TD class='gauche'>895366T</TD><TD>Meuble clapets abattants 10C C.het/ant</TD><TD>UN</TD><TD>9239</TD><TD>SIMMOB</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;11;29)</TD><TD class='delai'>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;14)</TD><TD>CF02.Natacha DELANNOY</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>162</TD><TD>EX05429B</TD><TD class='gauche'>896392J</TD><TD>Arm.corps anth L120 x198 cm T.1158</TD><TD>UN</TD><TD>3444</TD><TD>VINCO INDUSTRIE</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;6)</TD><TD class='delai'>=DATE(2012;12;17)</TD><TD>=DATE(2012;12;17)</TD><TD>=DATE(2012;12;21)</TD><TD>CF02.Natacha DELANNOY</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>164</TD><TD>EX05431H</TD><TD class='gauche'>896366K</TD><TD>Arm.corps anth L120 x100 cm T.1158</TD><TD>UN</TD><TD>3444</TD><TD>VINCO INDUSTRIE</TD><TD>2</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;6)</TD><TD class='delai'>=DATE(2012;12;17)</TD><TD>=DATE(2012;12;17)</TD><TD>=DATE(2012;12;21)</TD><TD>CF02.Natacha DELANNOY</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>166</TD><TD>EX05599R</TD><TD class='gauche'>359337B</TD><TD>Confort fauteuil visit lot de 2 T.0602</TD><TD>UN</TD><TD>7061</TD><TD>ART PROG</TD><TD>2</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;11;29)</TD><TD class='delai'>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;10)</TD><TD>=DATE(2012;12;14)</TD><TD>CF16.Valérie REGIS GIANAS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+<TR><TD>168</TD><TD>EX05602D</TD><TD class='gauche'>424828N</TD><TD>Xénon fauteuil accou réglables T.1912</TD><TD>UN</TD><TD>9160</TD><TD>G G I</TD><TD>1</TD><TD>FOU</TD><TD></TD><TD>=DATE(2012;12;6)</TD><TD class='delai'>=DATE(2012;12;17)</TD><TD>=DATE(2012;12;17)</TD><TD>=DATE(2012;12;21)</TD><TD>CF14.Magali GALAIS</TD>
+<TD>=DATE(2012;1;31)</TD><TD>=DATE(2012;1;31)</TD>
+</TR>
+</HTML>

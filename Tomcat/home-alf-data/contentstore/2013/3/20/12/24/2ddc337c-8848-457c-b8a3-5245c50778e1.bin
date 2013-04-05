@@ -1,0 +1,22 @@
+#
+# Alfresco version information
+#
+
+# Version label
+
+version.major=4
+version.minor=1
+version.revision=3
+version.label=
+
+# Edition label
+
+version.edition=Enterprise
+
+# Build number
+
+version.build=97
+
+# Schema number
+
+version.schema=5118

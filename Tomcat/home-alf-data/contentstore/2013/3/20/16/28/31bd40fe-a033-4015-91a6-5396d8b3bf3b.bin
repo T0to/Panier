@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<name>Notice_de_montage_7906_104095</name>
+<titre>Notice de montage 7906 104095</titre>
+<description>notice montage AM 104095</description>
+<createur>Marylène DAUNIZEAU</createur>
+<infosgenerique>
+<type>Notice de montage</type>
+<origine>X3</origine>
+</infosgenerique>
+<fournisseur>
+<num>7906</num>
+<cat>MARCH</cat>
+<nom>BENITO FRANCE</nom>
+</fournisseur>
+<divers>
+</divers>
+<projet>
+</projet>
+<validite>
+<start>2011-01-01</start>
+<end>2025-12-31</end>
+</validite>
+<articleMaitre>104095</articleMaitre>
+<article>
+<ref>104095001</ref>
+<univers>812</univers>
+<secteur>80202</secteur>
+<designation>portique 2  balanç.à sceller.metal.</designation>
+</article>
+<article>
+<ref>104095002</ref>
+<univers>812</univers>
+<secteur>80202</secteur>
+<designation>portique 2  balanç. Platine. Pieds metal.</designation>
+</article>
+<client>
+</client>
+</document>

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_37-b06 (Sun Microsystems Inc.)
+Specification-Title: Alfresco Share
+Specification-Version: 4.1.3
+Implementation-Title: Alfresco Share Enterprise
+Implementation-Version: 4.1.3-97
+Build-Date: 20130223-1115
+

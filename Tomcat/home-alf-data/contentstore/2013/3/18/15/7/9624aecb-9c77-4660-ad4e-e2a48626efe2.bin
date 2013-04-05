@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<document>
+	<name>exemple_Fournisseur.pdf</name>
+	<titre>exemple_Fournisseur</titre>
+	<description>exemple Fournisseur</description>
+	<createur>SMILE</createur>
+	<infosgenerique>
+		<type>Cotation fournisseur</type>
+		<origine>X3</origine>
+		<x3num>123</x3num>
+	</infosgenerique>
+	<fournisseur>
+		<num>123456</num>
+		<cat>CPTA</cat>
+		<nom>MILE</nom>
+	</fournisseur>
+</document>
+				

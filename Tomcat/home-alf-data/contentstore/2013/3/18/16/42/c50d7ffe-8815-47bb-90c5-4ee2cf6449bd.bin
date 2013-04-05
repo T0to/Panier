@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<document>
+	<name>exemple.pdf</name>
+	<titre>exemple</titre>
+	<description>exemple Projet</description>
+	<createur>SMILE</createur>
+	<infosgenerique>
+		<type>Devis</type>
+		<origine>X3</origine>
+		<x3num>123</x3num>
+	</infosgenerique>
+	<divers>
+		<devis>98765</devis>
+	</divers>
+	<projet>
+		<site>AIX</site>
+	</projet>
+</document>
+				

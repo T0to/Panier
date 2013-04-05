@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<name>Rapport_d_essai_8393_101545</name>
+<titre>Rapport d'essai 8393 101545</titre>
+<description>rapport essai article maitre 101545</description>
+<createur>Marylène DAUNIZEAU</createur>
+<infosgenerique>
+<type>Rapport d'essai</type>
+<origine>X3</origine>
+</infosgenerique>
+<fournisseur>
+<num>8393</num>
+<cat>MARCH</cat>
+<nom>RB2 CREATIONS</nom>
+</fournisseur>
+<divers>
+</divers>
+<projet>
+</projet>
+<validite>
+<start>2013-01-01</start>
+<end>2015-12-31</end>
+</validite>
+<articleMaitre>101545</articleMaitre>
+<article>
+<ref>101545002</ref>
+<univers>802</univers>
+<secteur>80212</secteur>
+<designation>Piscine à balles version petit modèle</designation>
+</article>
+<client>
+</client>
+</document>

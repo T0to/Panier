@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     11 avril. 2012 15:53:04                                                        
+
+     project    
+     description
+                   
+     thmor                                                      
+     ====================================================================== -->
+<project name="Alfresco" default="update-demo-developpement-low-process">
+	<!-- Ajout de la librairie ant-contrib -->
+	<taskdef resource="net/sf/antcontrib/antlib.xml" />
+	<description>
+            description
+    </description>
+	<property file="build.properties" />	
+	<property file="${projectAMP.dir}/build.properties" />
+	<property file="dbAndReferences.properties" />
+
+	<!-- definition des repertoires et fichiers de sortie -->
+	<property name="build.dir" value="${projectAlfresco.dir}/target" />
+	<property name="alfresco.dir" value="${build.dir}/alfresco" />
+
+	<property name="filters.dir" value="${projectAlfresco.dir}/filters" />
+	<property name="build.libs.dir" value="${projectAlfresco.dir}/ext/build-libs"/>
+	<property name="alfresco.target" value="${alfresco.dir}/tomcat/webapps/alfresco" />
+
+
+	<property name="alfresco.web.dir" value="${projectAlfresco.dir}/src/alfresco/web" />
+	<property name="alfresco.classes.src" value="${projectAlfresco.dir}/src/alfresco/classes" />
+	<property name="alfresco.shared.src" value="${projectAlfresco.dir}/src/alfresco/shared" />
+	<property name="alfresco.classes.dest" value="${alfresco.target}/WEB-INF/classes" />
+	<property name="alfresco.dependencies.classes" value="${alfresco.target}/WEB-INF/classes" />
+	<property name="alfresco.shared.dir" value="${alfresco.dir}/tomcat/shared/classes" />
+	
+	<property name="build.dir.classes" value="${alfresco.target}/WEB-INF/classes" />
+	<property name="build.dir.dependencies" value="${build.dir}/dependencies" />
+	<property name="build.dir.dependencies.classes" value="${alfresco.target}/WEB-INF/classes" />
+	<property name="build.dir.shared" value="${alfresco.dir}/tomcat/shared/classes/alfresco" />
+
+	<property name="build.dir.release" value="${build.dir}/release" />
+	<property name="build.dir.release.full" value="${build.dir.release}/full" />
+	<property name="build.dir.release.partial" value="${build.dir.release}/war" />
+	<property name="build.dir.release.lib" value="${build.dir.release}/lib" />
+	<property name="build.dir.release.dependencies.jar" value="${build.dir.release.lib}/dependencies.jar" />
+	<property name="build.jar.release" value="${build.dir.release}/test.jar" />
+
+	<property name="build.zip.extensions" value="${build.dir.release.full}/extensions.zip" />
+	<property name="build.zip" value="${build.dir.release.full}/alfresco.zip" />
+	<property name="build.tgz" value="${build.dir.release.full}/alfresco.tar.gz" />
+
+	<property name="shared.target" value="${build.dir.release.partial}/shared.tar.gz" />
+	<property name="shared.tomcat" value="${alfresco.dir}/tomcat/shared" />
+	
+	
+
+	<property name="alfresco.war" value="${alfresco.target}.war" />
+	
+	
+	
+	<!-- SOLR Dirs-->
+	<property name="solr.conf.dir" value="${projectAlfresco.dir}/ext/solr/"/>
+	
+	<!--Ext libs dir-->
+	<property name="ext.libs.dir" value="${projectAlfresco.dir}/ext/libs/"/>
+	
+	<!--Environnement developpement-->
+	<property name="livraison.dev.dest.dir" value="${projectAlfresco.dir}/livraison/dev"/>
+	<property name="ext.src.dir" value="${projectAlfresco.dir}/ext"/>
+	
+	
+	<property name="dev.tomcat.conf.dir" value="${projectAlfresco.dir}/ext/tomcat-dev/tomcat"/>
+	<property name="dev.sql.scripts.dir" value="${projectAlfresco.dir}/ext/dev-db-sql/"/>
+	<property name="alfresco.tomcat.patch.dir" value ="${alfresco.dev.target.home.dir}/tomcat"/>
+	<!--Environnement integration-->
+	<!--<property name="livraison.inte.dest.dir" value="${projectAlfresco.dir}/livraison/inte"/>
+	<property name="inte.tomcat.conf.dir" value="${projectAlfresco.dir}/ext/tomcat-inte/"/>
+	<property name="inte.sql.scripts.dir" value="${projectAlfresco.dir}/ext/inte-db-sql/"/>-->
+    
+
+	<!-- Récupération des liens symboliques eclipse -->
+
+
+	<path id="class.path">
+		<fileset dir="${alfresco-sdk-libs-server}">
+			<include name="**/*.jar" />
+		</fileset>	
+		<fileset dir="${build.libs.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<target name="update-alfresco-webscripts-overriden-quickly">
+			
+			<copydir dest="${alfresco.tomcat.patch.dir}/shared/classes/alfresco/extension/template/webscripts" forceoverwrite="true" src="${projectAlfresco.dir}/src/alfresco/shared/alfresco/extension/templates/webscripts"></copydir>
+		</target>
+	
+	<target name="update-share-webscripts-overriden-quickly">
+				
+			<copydir dest="${alfresco.tomcat.patch.dir}/shared/classes/alfresco/web-extension/site-webscripts" forceoverwrite="true" src="${projectAlfresco.dir}/src/alfresco/shared/alfresco/web-extension/site-webscripts"></copydir>
+	</target>
+	
+	<target name="prepare-release-dev" depends="set-filter">
+				
+				<!--untar alfresco from reference"-->	 
+			    <delete dir="${livraison.dev.dest.dir}" failonerror="false" />
+			 	
+			    <mkdir dir="${livraison.dev.dest.dir}/tmp" />
+			    
+			    <untar compression="gzip" src="${alfresco-bundle-tomcat-reference}" dest="${livraison.dev.dest.dir}/tmp" />
+				<!--Manage alfresco DAM AMP-->
+				
+				<ant antfile="${projectAMP.dir}/build.xml">
+					<target name="package-amp" />					
+				</ant>
+			
+				<copy file="${projectAMP.dir}/build/dist/${alfresco.amp.name}" todir="${livraison.dev.dest.dir}/tmp/amps"/>
+		        <copy file="${projectAMP.dir}/build/dist/${alfresco.amp.name}" todir="${livraison.dev.dest.dir}/amps"/>
+			
+				<java dir="." fork="true" classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+		            <classpath refid="class.path" />
+		            <!--Debut Modif Smile -->
+					<arg line="install ${livraison.dev.dest.dir}/tmp/amps/${alfresco.amp.name}  ${livraison.dev.dest.dir}/tmp/tomcat/webapps/alfresco.war -force -verbose"/>					
+					<!--Fin Modif SMile -->
+				</java>
+		
+		       <copy file="${livraison.dev.dest.dir}/tmp/tomcat/webapps/alfresco.war" todir="${livraison.dev.dest.dir}/tomcat/webapps"/>
+				
+			
+				<delete dir="${projectAMP.dir}/build"/>
+			 
+				<!--<delete file="${livraison.dev.dest.dir}/dam.amp"/>--> 
+				<!--<delete>
+					<fileset dir="${livraison.dev.dest.dir}">
+		    			<include name="***/*.bak"/>	    			
+					</fileset>
+				</delete>-->
+				
+				
+				<!--Manage share AMP-->
+	
+				<ant antfile="${projectShareAMP.dir}/build.xml">
+					<target name="package-amp" />					
+				</ant>
+				
+				<copy file="${projectShareAMP.dir}/build/dist/${share.amp.name}" todir="${livraison.dev.dest.dir}/tmp/amps-share"/>
+				<copy file="${projectShareAMP.dir}/build/dist/${share.amp.name}" todir="${livraison.dev.dest.dir}/amps-share"/>
+				
+					
+				<java dir="." fork="true" classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+		            <classpath refid="class.path" />
+		            <!--Debut Modif Smile -->
+					<arg line="install ${livraison.dev.dest.dir}/tmp/amps-share/${share.amp.name}  ${livraison.dev.dest.dir}/tmp/tomcat/webapps/share.war -force -verbose"/>
+					<!--Fin Modif SMile -->
+				</java>
+		
+		
+		       <copy file="${livraison.dev.dest.dir}/tmp/tomcat/webapps/share.war" todir="${livraison.dev.dest.dir}/tomcat/webapps"/>
+		
+				
+			
+		
+		   
+		    
+		
+		
+		    <!-- copy tomcat conf in livraison dir-->
+			<copydir dest="${livraison.dev.dest.dir}/tomcat" src="${dev.tomcat.conf.dir}"/>
+			
+			<!-- copy solr conf in tmp2 livraison dir-->
+			<copydir dest="${livraison.dev.dest.dir}" src="${solr.conf.dir}"/>
+			
+			<!--copy sqls scripts-->
+			<copyfile dest="${livraison.dev.dest.dir}" src="${dev.sql.scripts.dir}/db_setup.sql"/>
+			<copyfile dest="${livraison.dev.dest.dir}" src="${dev.sql.scripts.dir}/db_remove.sql"/>
+			
+			
+			<copy todir="${livraison.dev.dest.dir}/tomcat/shared/classes" overwrite="true">
+						<fileset dir="${alfresco.shared.src}">
+							<exclude name="**/*.acp" />
+							<exclude name="**/*.lic" />
+						</fileset>
+						<filterset>
+							<filtersfile file="${filter.file}" />
+						</filterset>
+					</copy>
+					<copy todir="${livraison.dev.dest.dir}/tomcat/shared/classes" overwrite="true">
+						<fileset dir="${alfresco.shared.src}">
+							<include name="**/*.acp" />
+						</fileset>
+					</copy>
+	<!--				<if>
+						<equals arg1="${copy.license}" arg2="true" />
+						<then>
+							<copy todir="${livraison.dev.dest.dir}/tomcat/shared/classes" overwrite="true">
+								<fileset dir="${alfresco.shared.src}">
+									<include name="**/*.lic" />
+								</fileset>
+							</copy>
+						</then>
+					</if>
+			-->
+			
+		<!--copy ext libs-->
+		<mkdir dir="${livraison.dev.dest.dir}/tomcat/shared/lib" />
+		<copy todir="${livraison.dev.dest.dir}/tomcat/shared/lib" overwrite="true">
+			<fileset dir="${ext.libs.dir}">
+				<include name="**/*.jar" />
+		 </fileset>
+		</copy>
+			
+		<delete dir="${livraison.dev.dest.dir}/tmp"/>
+			
+			
+			
+
+			
+	</target>
+
+	<!--
+	<target name="update-demo-developpement-conf-only" description="Mise àjour de la configuration en développement" depends="set-filter">
+		<copy todir="${alfresco.tomcat.patch.dir}/shared/classes" overwrite="true">
+			<fileset dir="${alfresco.shared.src}">
+				<exclude name="**/*.acp" />
+				<exclude name="**/*.lic" />
+			</fileset>
+			<filterset>
+				<filtersfile file="${filter.file}" />
+			</filterset>
+		</copy>
+		<copy todir="${alfresco.tomcat.patch.dir}/shared/classes" overwrite="true">
+			<fileset dir="${alfresco.shared.src}">
+				<include name="**/*.acp" />
+			</fileset>
+		</copy>
+		<if>
+			<equals arg1="${copy.license}" arg2="true" />
+			<then>
+				<copy todir="${alfresco.tomcat.patch.dir}/shared/classes" overwrite="true">
+					<fileset dir="${alfresco.shared.src}">
+						<include name="**/*.lic" />
+					</fileset>
+				</copy>
+			</then>
+		</if>
+	</target>
+	-->
+	<target name="update-demo-developpement-low-process" description="Mets a jour le serveur de developpement" depends="prepare-release-dev">
+		<echo message="Déploiement sur le server de developpement ${alfresco.tomcat.patch.dir}" />
+		
+		<echo message="Suppression du repertoire shared ${alfresco.tomcat.patch.dir}/shared" />
+		<delete dir="${alfresco.tomcat.patch.dir}/shared" failonerror="false"/>
+		
+		<echo message="Suppression du repertoire alfresco ${alfresco.tomcat.patch.dir}/webapps/alfresco" />
+		<delete dir="${alfresco.tomcat.patch.dir}/webapps/alfresco" failonerror="false"/>
+		
+		<echo message="Suppression du repertoire share ${alfresco.tomcat.patch.dir}/webapps/share" />
+		<delete dir="${alfresco.tomcat.patch.dir}/webapps/share" failonerror="false"/>
+		
+		<echo message="Suppression du war alfresco ${alfresco.tomcat.patch.dir}/webapps/alfresco.war" />
+		<delete file="${alfresco.tomcat.patch.dir}/webapps/alfresco.war" failonerror="false"/>
+		
+		<echo message="Suppression du war share ${alfresco.tomcat.patch.dir}/webapps/share.war" />
+		<delete file="${alfresco.tomcat.patch.dir}/webapps/share.war" failonerror="false"/>
+		
+		<echo message="Suppression du repertoire work ${alfresco.tomcat.patch.dir}/work" />
+		<delete dir="${alfresco.tomcat.patch.dir}/work" failonerror="false"/>
+		
+		<echo message="Suppression du repertoire alf_data" />
+		<delete dir="${alfresco.dev.target.home.dir}/alf_data" failonerror="false"/>
+			
+		<echo message="Copie des fichiers de livraison dans l'arborescence de l'instance alfresco ${alfresco.dev.target.home.dir}" />
+		<copy todir="${alfresco.dev.target.home.dir}" overwrite="true">
+			<fileset dir="${livraison.dev.dest.dir}"/>					
+		</copy>
+		
+		
+	</target>
+	
+	
+	<target name="prepare-release-inte" depends="set-filter">
+			<tstamp>
+				<format property="inte.date" pattern="yyyyMMdd" />
+			</tstamp>
+			<!--untar alfresco from reference"-->	 
+		    <delete dir="${livraison.inte.dest.dir}" failonerror="false" />
+		 	
+		    <mkdir dir="${livraison.inte.dest.dir}/tmp2" />
+		    <mkdir dir="${livraison.inte.dest.dir}/tmp2/alfresco" />
+		 
+		
+		  <!--
+		    <untar compression="gzip" src="${alfresco-bundle-tomcat-reference}" dest="${livraison.inte.dest.dir}/tmp" />
+		  -->
+			
+			<!--<copy file="${livraison.inte.dest.dir}/tmp/tomcat/webapps/alfresco.war" todir="${livraison.inte.dest.dir}/tmp2/alfresco/tomcat/webapps"/>
+			<copy file="${livraison.inte.dest.dir}/tmp/tomcat/webapps/share.war" todir="${livraison.inte.dest.dir}/tmp2/alfresco/tomcat/webapps"/>-->
+		    			
+			<!--<copydir dest="${livraison.inte.dest.dir}/tmp2/alfresco/tomcat/shared" src="${livraison.inte.dest.dir}/tmp/tomcat/shared"></copydir>-->
+		
+		    <!--
+			<delete dir="${livraison.inte.dest.dir}/tmp"/>
+			-->
+		    <untar compression="gzip" src="${alfresco-bundle-tomcat-reference}" dest="${livraison.inte.dest.dir}/tmp2/alfresco" />
+		    
+		    <delete dir="${livraison.inte.dest.dir}/tmp2/alfresco/alf_data"/>
+		    <delete dir="${livraison.inte.dest.dir}/tmp2/alfresco/amps"/>
+		    <delete dir="${livraison.inte.dest.dir}/tmp2/alfresco/amps-share"/>
+		
+			<!--Manage alfresco AMP-->
+			
+			<ant antfile="/home/thmor/Travail/JC-DECAUX/workspace_ant/Alfresco_DAM_AMP/build.xml">
+				<target name="package-amp" />					
+			</ant>
+		
+			<copy file="${projectAMP.dir}/build/dist/dam.amp" todir="${livraison.inte.dest.dir}/tmp2/alfresco/amps"/>
+		
+			<java dir="." fork="true" classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+	            <classpath refid="class.path" />
+	            <!--Debut Modif Smile -->
+				<arg line="install ${livraison.inte.dest.dir}/tmp2/alfresco/amps/dam.amp  ${livraison.inte.dest.dir}/tmp2/alfresco/tomcat/webapps/alfresco.war -force -verbose"/>
+				<!--Fin Modif SMile -->
+			</java>
+		
+		<!--Manage alfresco DAM Panier AMP-->
+						
+			<ant antfile="/home/thmor/Travail/JC-DECAUX/workspace_ant/Alfresco_DAM_Panier_AMP/build.xml">
+				<target name="package-amp" />					
+			</ant>
+		
+			<copy file="${projectAMP.dir}/build/dist/dam.amp" todir="${livraison.inte.dest.dir}/tmp2/alfresco/amps"/>
+		
+			<copy file="${projectPanierAMP.dir}/build/dist/panier.amp" todir="${livraison.inte.dest.dir}/tmp2/alfresco/amps"/>
+	        
+		
+			<java dir="." fork="true" classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+	            <classpath refid="class.path" />
+	            
+				<arg line="install ${livraison.inte.dest.dir}/tmp2/alfresco/amps/panier.amp  ${livraison.inte.dest.dir}/tmp2/alfresco/tomcat/webapps/alfresco.war -force -verbose"/>					
+				
+			</java>
+			<!--
+			<java dir="." fork="true" classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+	            <classpath refid="class.path" />
+	           
+				<arg line="install ${ext.src.dir}/amp_alfresco/alfresco-mm-repo-1.0-SNAPSHOT.amp  ${livraison.dev.dest.dir}/alfresco.war -force -verbose"/>
+				
+			</java>
+			-->
+			
+		
+			<delete dir="${projectAMP.dir}/build"/>
+		 
+			<!--<delete file="${livraison.dev.dest.dir}/dam.amp"/>--> 
+			<!--<delete>
+				<fileset dir="${livraison.dev.dest.dir}">
+	    			<include name="***/*.bak"/>	    			
+				</fileset>
+			</delete>-->
+			
+			
+			<!--Manage share AMP-->
+			<ant antfile="/home/thmor/Travail/JC-DECAUX/workspace_ant/Share_DAM_AMP/build.xml">
+				<target name="package-amp" />					
+			</ant>
+			
+			<copy file="${projectShareAMP.dir}/build/dist/share-dam.amp" todir="${livraison.inte.dest.dir}/tmp2/alfresco/amps-share"/>
+			
+				
+			<java dir="." fork="true" classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+	            <classpath refid="class.path" />
+	            <!--Debut Modif Smile -->
+				<arg line="install ${livraison.inte.dest.dir}/tmp2/alfresco/amps-share/share-dam.amp  ${livraison.inte.dest.dir}/tmp2/alfresco/tomcat/webapps/share.war -force -verbose"/>
+				<!--Fin Modif SMile -->
+			</java>
+		
+	
+		
+		<!--Manage share Panier AMP-->
+				
+						
+		<ant antfile="/home/thmor/Travail/JC-DECAUX/workspace_ant/Share_DAM_Panier_AMP/build.xml">
+			<target name="package-amp" />					
+		</ant>
+		
+		<copy file="${projectSharePanierAMP.dir}/build/dist/share-panier-dam.amp" todir="${livraison.inte.dest.dir}/tmp2/alfresco/amps-share"/>
+		
+		
+			
+		<java dir="." fork="true" classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+            <classpath refid="class.path" />		           
+			<arg line="install ${livraison.inte.dest.dir}/tmp2/alfresco/amps-share/share-panier-dam.amp  ${livraison.inte.dest.dir}/tmp2/alfresco/tomcat/webapps/share.war -force -verbose"/>		
+		</java>
+			
+			<!--
+			<java dir="." fork="true" classname="org.alfresco.repo.module.tool.ModuleManagementTool">
+	            <classpath refid="class.path" />
+	            
+				<arg line="install ${ext.src.dir}/amp_share/alfresco-mm-share-1.0-SNAPSHOT.amp  ${livraison.inte.dest.dir}/share.war -force -verbose"/>
+				
+			</java>
+			-->
+			<!--<antcall target="update-demo-developpement-conf-only"/>-->
+			
+		<!-- copy tomcat conf in tmp2 livraison dir-->
+		<copydir dest="${livraison.inte.dest.dir}/tmp2/alfresco" src="${inte.tomcat.conf.dir}"/>
+		
+		<!-- copy solr conf in tmp2 livraison dir-->
+		<copydir dest="${livraison.inte.dest.dir}/tmp2/alfresco" src="${solr.conf.dir}"/>
+		
+		<!--copy sqls scripts-->
+		<copyfile dest="${livraison.inte.dest.dir}/tmp2/alfresco" src="${inte.sql.scripts.dir}/db_setup.sql"/>
+		<copyfile dest="${livraison.inte.dest.dir}/tmp2/alfresco" src="${inte.sql.scripts.dir}/db_remove.sql"/>
+		
+		
+		<copy todir="${livraison.inte.dest.dir}/tmp2/alfresco/tomcat/shared/classes" overwrite="true">
+					<fileset dir="${alfresco.shared.src}">
+						<exclude name="**/*.acp" />
+						<exclude name="**/*.lic" />
+					</fileset>
+					<filterset>
+						<filtersfile file="${filter.file}" />
+					</filterset>
+				</copy>
+				<copy todir="${livraison.inte.dest.dir}/tmp2/alfresco/tomcat/shared/classes" overwrite="true">
+					<fileset dir="${alfresco.shared.src}">
+						<include name="**/*.acp" />
+					</fileset>
+				</copy>
+				<if>
+					<equals arg1="${copy.license}" arg2="true" />
+					<then>
+						<copy todir="${livraison.inte.dest.dir}/tmp2/alfresco/tomcat/shared/classes" overwrite="true">
+							<fileset dir="${alfresco.shared.src}">
+								<include name="**/*.lic" />
+							</fileset>
+						</copy>
+					</then>
+				</if>
+		
+		<property name="inte.livraisonname" value="JCD_DAM_Alfresco_${inte.date}_inte" />
+		<tar compression="gzip" basedir="${livraison.inte.dest.dir}/tmp2" destfile="${livraison.inte.dest.dir}/${inte.livraisonname}.tar.gz" excludes="**/*.bak"/>
+		<!--<delete dir="${livraison.inte.dest.dir}/tmp2"/>-->
+		
+		
+		
+		
+
+		
+		</target>
+	
+	<target name="set-filter" unless="set-filter.false">
+		
+				<property name="filter.file" value="${filters.dir}/developpement.properties" />
+		
+	</target>
+</project>

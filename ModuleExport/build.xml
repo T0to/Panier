@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<project name="Alfresco AMP" default="update-custom-alfresco-webscripts-quickly" basedir=".">
+	<!--Debut Ajout Smile-->
+	
+	<property file="build.properties" />
+	
+	<!--Fin Ajout Smile-->
+	<property name="native.AMP.src.dir" value="${projectAMP.dir}/source/classes"/>
+	<property name="native.AMP.dest.dir" value="${projectAMP.dir}/web/WEB-INF/classes"/>
+    <property name="build.AMP.dir" value="${projectAMP.dir}/build"/>
+    <property name="config.AMP.dir" value="${projectAMP.dir}/config"/>
+    <property name="jar.AMP.file" value="${build.AMP.dir}/lib/${alfresco.jar.name}"/>
+    <property name="amp.file" value="${build.AMP.dir}/dist/${alfresco.amp.name}"/>
+	<property name="sdk.AMP.dir" value="../${sdk.project.name}"/>
+	
+    <!--Debut Ajout Smile -->	
+	<property name="alfresco.lib.src" value="${projectAMP.dir}/lib" />	
+	<!--Fin Ajout Smile-->	
+    
+    <!--Debut Ajout Smile -->	
+    	<target name="clean" depends="rmdirs,mkdirs,compile" />
+    
+	
+	
+    	<path id="class.path">
+	        <dirset dir="${build.AMP.dir}" />
+	        
+	    	
+	    	<fileset dir="${alfresco.lib.src}">
+	    		<include name="**/*.jar" />
+	    	</fileset>
+    		
+    		<fileset dir="${alfresco-sdk-libs-server}" includes="**/*.jar" />
+    			
+	    </path>	
+	<!--Fin Ajout Smile-->	
+		
+    <!--Debut Ajout Smile-->	
+	 <target name="rmdirs">
+	 	<delete dir="${build.AMP.dir}" />
+	 </target>	
+    <!--Fin Ajout Smile-->
+    	
+    <target name="mkdirs">
+        <mkdir dir="${build.AMP.dir}/dist" />
+        <mkdir dir="${build.AMP.dir}/lib" />
+    </target>
+    
+	<!--Debut Modif Smile-->
+	<path id="class.path">
+        <dirset dir="${build.AMP.dir}" />
+        <fileset dir="${sdk.AMP.dir}" includes="**/*.jar"/>
+    	
+    	<fileset dir="${alfresco.lib.src}">
+    		<include name="**/*.jar" />
+    	</fileset>
+    </path>	
+	    	
+    <!--	
+    <path id="class.path">
+        <dirset dir="${build.AMP.dir}" />
+        <fileset dir="../../lib/server" includes="**/*.jar"/>
+    </path>-->
+	<!--Fin Modif Smile-->
+
+	<target name="compile">
+	   	<mkdir dir="${build.AMP.dir}/classes" />
+		<javac debug="true" classpathref="class.path" srcdir="${projectAMP.dir}/source/java" destdir="${build.AMP.dir}/classes" target="1.6" source="1.6"/>
+		<!--Debut Ajout SMile -->
+		<!--<delete dir="${native.AMP.dest.dir}" />-->
+		<!--<mkdir dir="${native.AMP.dest.dir}" />-->
+		<javac debug="true" classpathref="class.path" srcdir="${native.AMP.src.dir}" destdir="${native.AMP.dest.dir}" target="1.6" source="1.6"/>
+		<!--Fin Ajout SMile -->
+	</target> 		
+    
+    <target name="package-jar" depends="clean">
+        <jar destfile="${jar.AMP.file}" >
+            <fileset dir="${build.AMP.dir}/classes" excludes="**/custom*,**/*Test*" includes="**/*.class" />
+			<fileset dir="${projectAMP.dir}/source" includes="META-INF/*" />
+        </jar>    	    	
+    </target>
+	
+    <target name="package-amp" depends="package-jar" description="Package the Module" >
+        <zip destfile="${amp.file}" >
+            <fileset dir="${projectAMP.dir}/build" includes="lib/*.jar" />
+        	<!--Debut Modif Smile -->
+            <fileset dir="${projectAMP.dir}" includes="config/**/*.*" excludes="**/module.properties,**/file-mapping.properties" />
+        	<fileset dir="${projectAMP.dir}" includes="web/**/*.*" />
+            <fileset dir="${projectAMP.dir}/config/alfresco/module/${alfresco.module.id}" includes="module.properties,file-mapping.properties" />
+        	<!--Fin Modif SMile -->
+        </zip>
+    </target>
+
+	<target name="update-custom-alfresco-webscripts-quickly">
+		<copydir dest="${alfresco.tomcat.patch.dir}/webapps/alfresco/WEB-INF/classes/alfresco/templates/webscripts/org/alfresco/module/${alfresco.module.id}" forceoverwrite="true" src="${projectAMP.dir}/config/alfresco/templates/webscripts/org/alfresco/module/${alfresco.module.id}/"></copydir>
+	</target>
+</project>

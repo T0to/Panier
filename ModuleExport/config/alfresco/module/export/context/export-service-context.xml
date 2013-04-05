@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+
+<beans>
+    <bean id="exportService" class="org.alfresco.module.export.service.ExportServiceImpl" init-method="init">
+    	<property name="moduleId" value="export"/>
+    	<property name="nodeService" ref="NodeService"/>
+    	<property name="serviceRegistry" ref="ServiceRegistry"/>
+    	<property name="fileFolderService" ref="fileFolderService"/>
+        
+    </bean>
+    
+      <bean id="exportServiceScript" parent="baseJavaScriptExtension" class="org.alfresco.module.export.script.ExportServiceScript">
+        <property name="extensionName">
+            <value>exportService</value>
+        </property>
+        <property name="exportService" ref="exportService"/>
+        <property name="serviceRegistry" ref="ServiceRegistry"/>
+        <property name="fileFolderService" ref="fileFolderService"/>
+        
+    </bean>
+    
+  <!--   <bean id="testActionScript" parent="baseJavaScriptExtension" class="org.alfresco.module.export.service.TestActionTransformExecuter">
+        <property name="extensionName">
+            <value>transformTest</value>
+        </property>
+        <property name="actionService" ref="actionService"/>
+        <property name="nodeService" ref="nodeService"/>
+        <property name="contentService" ref="contentService"/>
+        <property name="fileFolderService" ref="fileFolderService"/>
+        <property name="mimetypeService" ref="mimetypeService"/>
+        <property name="versionService" ref="versionService"/>
+        
+    </bean>  -->
+</beans>

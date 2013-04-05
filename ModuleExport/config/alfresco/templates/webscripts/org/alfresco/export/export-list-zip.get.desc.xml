@@ -1,0 +1,9 @@
+<webscript>
+  <shortname>ZipStreamWebscript</shortname>
+  <description>
+  <![CDATA[Stream the content's of a folder as a .zip content file]]>
+  </description>
+  <url>/export/zip</url>
+  <format default="json">argument</format>
+  <authentication>user</authentication>
+</webscript>

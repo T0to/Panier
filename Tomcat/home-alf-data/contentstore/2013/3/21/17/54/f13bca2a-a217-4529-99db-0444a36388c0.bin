@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<name>Convention_fournisseur_8720_20131231</name>
+<titre>Convention fournisseur 8720 20131231</titre>
+<description>test convention fournisseur  8720</description>
+<createur>Marylène DAUNIZEAU</createur>
+<infosgenerique>
+<type>Convention fournisseur</type>
+<origine>X3</origine>
+</infosgenerique>
+<fournisseur>
+<num>8720</num>
+<cat>MARCH</cat>
+<nom>3M FRANCE</nom>
+</fournisseur>
+<divers>
+<contrat>8720CP55002</contrat>
+</divers>
+<projet>
+</projet>
+<validite>
+<start>2013-01-01</start>
+<end>2013-12-31</end>
+</validite>
+<client>
+</client>
+</document>

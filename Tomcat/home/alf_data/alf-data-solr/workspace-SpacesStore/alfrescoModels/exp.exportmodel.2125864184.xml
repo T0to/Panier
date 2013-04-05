@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.alfresco.org/model/dictionary/1.0" name="exp:exportmodel">
+    <description>Export Model</description>
+    <author>Smile : Maxime Porée</author>
+    <version>1.0</version>
+    <imports>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+    </imports>
+    <namespaces>
+        <namespace uri="http://www.alfresco.org/model/export/1.0" prefix="exp"/>
+    </namespaces>
+    <data-types/>
+    <constraints/>
+    <types>
+        <type name="exp:list">
+            <title>Export Container</title>
+            <parent>cm:cmobject</parent>
+            <properties>
+                <property name="exp:generatedFile">
+                    <type>d:noderef</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="true"/>
+                </property>
+            </properties>
+            <associations>
+                <association name="exp:elements">
+                    <source/>
+                    <target>
+                        <class>cm:cmobject</class>
+                        <mandatory enforced="false">false</mandatory>
+                        <many>true</many>
+                    </target>
+                </association>
+            </associations>
+            <overrides/>
+            <mandatory-aspects/>
+        </type>
+    </types>
+    <aspects/>
+</model>

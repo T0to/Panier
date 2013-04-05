@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema name="alfresco" version="1.0">
+   <types>
+	  <fieldType name="ixxusDateField" class="com.ixxus.alfresco.solr.IxxusDateField" omitNorms="true" precisionStep="6" positionIncrementGap="0"/>
+      <fieldType name="alfrescoDataType" class="org.alfresco.solr.AlfrescoDataType">
+         <analyzer>
+            <tokenizer class="org.apache.solr.analysis.WhitespaceTokenizerFactory" />
+            <filter class="org.apache.solr.analysis.WordDelimiterFilterFactory" 
+                    generateWordParts="1"
+                    generateNumberParts="1"
+                    catenateWords="1"
+                    catenateNumbers="1"
+                    catenateAll="1"
+                    splitOnCaseChange="1"
+                    splitOnNumerics="1"
+                    preserveOriginal="1"
+                    stemEnglishPossessive="1"/>
+            <filter class="org.apache.solr.analysis.LowerCaseFilterFactory" />
+         </analyzer>
+      </fieldType>
+   </types>
+   <fields>
+	  <!-- Fields -->
+      <field name="ID" type="alfrescoDataType" indexed="true" omitNorms="true" stored="true" multiValued="true"></field>
+	  <field name="@{http://www.alfresco.org/model/content/1.0}created.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/user/1.0}accountExpiryDate.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/system/1.0}archivedDate.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/cmis/1.0/cs01}creationDate.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/cmis/1.0/cs01}lastModificationDate.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/versionstore/2.0}frozenCreated.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/versionstore/2.0}frozenAccessed.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/versionstore/2.0}frozenModified.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/wcmappmodel/1.0}deployendtime.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/wcmappmodel/1.0}deploystarttime.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/wcmappmodel/1.0}deployattempttime.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/wcmappmodel/1.0}expirationDate.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/content/1.0}ratedAt.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/content/1.0}published.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/content/1.0}to.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/content/1.0}from.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/content/1.0}updated.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/content/1.0}accessed.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/content/1.0}removeAfter.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/content/1.0}modified.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/content/1.0}sentdate.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/calendar}fromDate.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/calendar}toDateDefault.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/calendar}toDate.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <field name="@{http://www.alfresco.org/model/calendar}fromDateDefault.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	   <field name="@{http://www.alfresco.org/model/wcmworkflow/1.0}launchDate.__.u" type="ixxusDateField" indexed="true" stored="false"/>
+	  <!-- Dynamic Fields -->
+      <dynamicField name="*" type="alfrescoDataType" indexed="true" omitNorms="true" stored="true" multiValued="true"></dynamicField>
+	  <!-- Copy fields -->
+	  <copyField source="@{http://www.alfresco.org/model/content/1.0}created" dest="@{http://www.alfresco.org/model/content/1.0}created.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/user/1.0}accountExpiryDate" dest="@{http://www.alfresco.org/model/user/1.0}accountExpiryDate.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/user/1.0}credentialsExpiryDate" dest="@{http://www.alfresco.org/model/user/1.0}credentialsExpiryDate.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/system/1.0}archivedDate" dest="@{http://www.alfresco.org/model/system/1.0}archivedDate.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/cmis/1.0/cs01}lastModificationDate" dest="@{http://www.alfresco.org/model/cmis/1.0/cs01}lastModificationDate.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/versionstore/2.0}frozenCreated" dest="@{http://www.alfresco.org/model/versionstore/2.0}frozenCreated.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/versionstore/2.0}frozenAccessed" dest="@{http://www.alfresco.org/model/versionstore/2.0}frozenAccessed.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/versionstore/2.0}frozenModified" dest="@{http://www.alfresco.org/model/versionstore/2.0}frozenModified.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/wcmappmodel/1.0}deployendtime" dest="@{http://www.alfresco.org/model/wcmappmodel/1.0}deployendtime.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/wcmappmodel/1.0}deploystarttime" dest="@{http://www.alfresco.org/model/wcmappmodel/1.0}deploystarttime.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/wcmappmodel/1.0}deployattempttime" dest="@{http://www.alfresco.org/model/wcmappmodel/1.0}deployattempttime.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/wcmappmodel/1.0}expirationDate" dest="@{http://www.alfresco.org/model/wcmappmodel/1.0}expirationDate.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/content/1.0}ratedAt" dest="@{http://www.alfresco.org/model/content/1.0}ratedAt.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/content/1.0}published" dest="@{http://www.alfresco.org/model/content/1.0}published.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/content/1.0}to" dest="@{http://www.alfresco.org/model/content/1.0}to.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/content/1.0}from" dest="@{http://www.alfresco.org/model/content/1.0}from.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/content/1.0}updated" dest="@{http://www.alfresco.org/model/content/1.0}updated.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/content/1.0}accessed" dest="@{http://www.alfresco.org/model/content/1.0}accessed.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/content/1.0}removeAfter" dest="@{http://www.alfresco.org/model/content/1.0}removeAfter.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/content/1.0}modified" dest="@{http://www.alfresco.org/model/content/1.0}modified.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/content/1.0}sentdate" dest="@{http://www.alfresco.org/model/content/1.0}sentdate.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/calendar}fromDate" dest="@{http://www.alfresco.org/model/calendar}fromDate.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/calendar}toDateDefault" dest="@{http://www.alfresco.org/model/calendar}toDateDefault.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/calendar}toDate" dest="@{http://www.alfresco.org/model/calendar}toDate.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/calendar}fromDateDefault" dest="@{http://www.alfresco.org/model/calendar}fromDateDefault.__.u" maxChars="23"/>
+	  <copyField source="@{http://www.alfresco.org/model/wcmworkflow/1.0}launchDate" dest="@{http://www.alfresco.org/model/wcmworkflow/1.0}launchDate.__.u" maxChars="23"/>
+   </fields>
+   <uniqueKey>ID</uniqueKey>
+   <defaultSearchField>ID</defaultSearchField>
+</schema>

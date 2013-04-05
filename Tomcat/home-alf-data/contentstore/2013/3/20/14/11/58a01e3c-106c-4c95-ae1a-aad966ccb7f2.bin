@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<name>Doc_technique_900119621_FM10065</name>
+<titre>Doc technique 900119621 FM10065</titre>
+<description>DOCT TECHNIQUE REF 900119621</description>
+<createur>Marylène DAUNIZEAU</createur>
+<infosgenerique>
+<type>Doc technique</type>
+<origine>X3</origine>
+</infosgenerique>
+<fournisseur>
+<num>FM10065</num>
+<cat>MARCH</cat>
+<nom>GIGADIS Grande Cuisine</nom>
+</fournisseur>
+<divers>
+</divers>
+<projet>
+</projet>
+<validite>
+<start>2015-01-01</start>
+<end>2010-01-01</end>
+</validite>
+<article>
+<ref>900119621</ref>
+<univers>806</univers>
+<secteur>80604</secteur>
+<designation>Lave linge whirlpool professionnel  ALA 029 - 23 kg</designation>
+</article>
+<client>
+</client>
+</document>

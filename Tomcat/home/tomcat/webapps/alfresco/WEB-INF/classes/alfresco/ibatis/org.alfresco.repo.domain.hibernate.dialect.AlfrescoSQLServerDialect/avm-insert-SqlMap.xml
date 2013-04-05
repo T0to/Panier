@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="alfresco.avm.insert">
+
+    <insert id="insert_AVMStore" parameterType="AVMStore">
+        <include refid="alfresco.avm.insert_AVMStore_AutoIncrement"/>
+        <selectKey resultType="long" keyProperty="id" order="AFTER">
+            select @@IDENTITY as value
+        </selectKey>
+    </insert>
+    
+    <insert id="insert_AVMStoreProperty" parameterMap="alfresco.avm.parameter_StorePropertyPatternMap">
+        <include refid="alfresco.avm.insert_AVMStoreProperty_AutoIncrement"/>
+        <selectKey resultType="long" keyProperty="id" order="AFTER">
+            select @@IDENTITY as value
+        </selectKey>
+    </insert>
+    
+    <insert id="insert_AVMNode" parameterType="AVMNode">
+        <include refid="alfresco.avm.insert_AVMNode_AutoIncrement"/>
+        <selectKey resultType="long" keyProperty="id" order="AFTER">
+            select @@IDENTITY as value
+        </selectKey>
+    </insert>
+    
+    <insert id="insert_AVMVersionRoot" parameterType="AVMVersionRoot">
+        <include refid="alfresco.avm.insert_AVMVersionRoot_AutoIncrement"/>
+        <selectKey resultType="long" keyProperty="id" order="AFTER">
+            select @@IDENTITY as value
+        </selectKey>
+    </insert>
+    
+</mapper>

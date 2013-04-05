@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<document>
+	<name>exemple</name>
+	<titre>exemple</titre>
+	<description>exemple xml</description>
+	<createur>Thomas Colle</createur>
+	<infosgenerique>
+		<type>Questionnaire de recrutement</type>
+		<origine>X3</origine>
+		<x3num>123</x3num>
+	</infosgenerique>
+	<fournisseur>
+		<num>12345</num>
+		<cat>BMAR</cat>
+		<nom>Smile</nom>
+	</fournisseur>
+</document>
+				

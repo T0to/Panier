@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<name>Certificat_fournisseur_7109_ISO_14001</name>
+<titre>Certificat fournisseur 7109 ISO 14001</titre>
+<description>CERTIFICAT FOURNISSEUR atilac</description>
+<createur>Marylène DAUNIZEAU</createur>
+<infosgenerique>
+<type>Certificat fournisseur</type>
+<origine>X3</origine>
+</infosgenerique>
+<fournisseur>
+<num>7109</num>
+<cat>MARCH</cat>
+<nom>ATILAC</nom>
+</fournisseur>
+<divers>
+<certiffournisseur>ISO 14001</certiffournisseur>
+</divers>
+<projet>
+</projet>
+<validite>
+<start>2003-01-01</start>
+<end>2013-12-31</end>
+</validite>
+<client>
+</client>
+</document>

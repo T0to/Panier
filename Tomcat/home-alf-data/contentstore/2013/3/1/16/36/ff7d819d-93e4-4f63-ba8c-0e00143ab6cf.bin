@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xsi:schemaLocation="http://www.alfresco.org/model/dictionary/1.0 modelSchema.xsd" -->
+<model name="camifcm:camifcontentmodel" xmlns="http://www.alfresco.org/model/dictionary/1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<description>Camif content Model</description>
+	<author>Smile : Thierry Morin</author>
+	<version>1.0</version>
+
+	<imports>
+		<import uri="http://www.alfresco.org/model/dictionary/1.0"
+			prefix="d" />
+		<import uri="http://www.alfresco.org/model/system/1.0" prefix="sys" />
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+	</imports>
+
+	<namespaces>
+		<namespace uri="http://www.camif.com/model/content/1.0"
+			prefix="camifcm" />
+	</namespaces>
+
+	<types>
+		<!-- STANDARD DOCUMENT -->
+		<type name="camifcm:standarddocument">
+			<title>Standard document</title>
+			<parent>cm:content</parent>
+			<properties>				
+				<property name="camifcm:chronoX3number">
+					<title>Chrono X3 number</title>
+					<type>d:text</type>
+				</property>
+			</properties>
+			<mandatory-aspects>
+				<aspect>cm:generalclassifiable</aspect>
+				<aspect>cm:titled</aspect>
+				<aspect>cm:auditable</aspect>
+			</mandatory-aspects>
+		</type>
+		<!-- !STANDARD DOCUMENT -->	
+		
+		<!-- STANDARD DOSSIER -->
+		<type name="camifcm:standardfolder">
+			<title>Standard folder</title>
+			<parent>cm:folder</parent>
+			<mandatory-aspects>
+				<aspect>cm:titled</aspect>
+				<aspect>cm:auditable</aspect>
+			</mandatory-aspects>
+		</type>
+		<!-- !STANDARD DOSSIER -->
+		
+		<!-- TYPE DOSSIER -->
+		<type name="camifcm:providerfolder">
+			<title>Provider folder</title>
+			<parent>camifcm:standardfolder</parent>
+		</type>
+		<type name="camifcm:projectfolder">
+			<title>Project folder</title>
+			<parent>camifcm:standardfolder</parent>
+		</type>
+		<type name="camifcm:quotationfolder">
+			<title>Quotation folder</title>
+			<parent>camifcm:standardfolder</parent>
+		</type>
+		<!-- !TYPE DOSSIER -->
+		
+		<!-- DOCUMENT FOURNISSEUR -->
+		<type name="camifcm:recruitmentquiz">
+			<title>Recruitment quiz</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:assessmentquiz">
+			<title>Assessment quiz</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:provideragreement">
+			<title>Provider agreement</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+				<aspect>camifcm:divers</aspect>
+				<aspect>camifcm:validity</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:certificateprovider">
+			<title>Certificate provider</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+				<aspect>camifcm:divers</aspect>
+			</mandatory-aspects>
+		</type>
+		<!-- !DOCUMENT FOURNISSEUR -->
+		
+		<!-- DOCUMENT ARTICLE -->
+		<type name="camifcm:instructionsforuse">
+			<title>Instructions for use</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+				<aspect>camifcm:article</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:installationinstructions">
+			<title>Installation instructions</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+				<aspect>camifcm:article</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:certificateofconformity">
+			<title>Certificate of conformity</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+				<aspect>camifcm:divers</aspect>
+				<aspect>camifcm:validity</aspect>
+				<aspect>camifcm:article</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:technicaldocumentation">
+			<title>Technical documentation</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+				<aspect>camifcm:article</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:frscommercialdoc">
+			<title>frs Commercial doc</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+				<aspect>camifcm:article</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:productcard">
+			<title>Product card</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+				<aspect>camifcm:article</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:environnementalcertificate">
+			<title>Environnemental certificate</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+				<aspect>camifcm:article</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:testreport">
+			<title>Test report</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+				<aspect>camifcm:article</aspect>
+			</mandatory-aspects>
+		</type>
+		<!-- !DOCUMENT ARTICLE -->
+		
+		<!-- DOCUMENT DEVIS -->
+		<type name="camifcm:quotation">
+			<title>Quotation</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:project</aspect>
+				<aspect>camifcm:divers</aspect>
+				<aspect>camifcm:validity</aspect>
+				<aspect>camifcm:article</aspect>
+				<aspect>camifcm:client</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:illustratedquotation">
+			<title>Illustrated quotation</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:project</aspect>
+				<aspect>camifcm:article</aspect>
+				<aspect>camifcm:validity</aspect>
+				<aspect>camifcm:divers</aspect>
+				<aspect>camifcm:client</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:installationdocument">
+			<title>Installation document</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:project</aspect>
+				<aspect>camifcm:divers</aspect>
+				<aspect>camifcm:client</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:planarchitect">
+			<title>Plan architect</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:project</aspect>
+				<aspect>camifcm:divers</aspect>
+				<aspect>camifcm:validity</aspect>
+				<aspect>camifcm:client</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:providerlisting">
+			<title>Provider listing</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:provider</aspect>
+				<aspect>camifcm:article</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:attributionnotification">
+		<title>Attribution notification</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:project</aspect>
+				<aspect>camifcm:divers</aspect>
+				<aspect>camifcm:client</aspect>
+			</mandatory-aspects>
+		</type>
+		<!-- !DOCUMENT DEVIS -->
+		
+		<!-- DOCUMENT PROJET -->
+		<type name="camifcm:bpu">
+			<title>BPU</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:project</aspect>
+				<aspect>camifcm:client</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:dqe">
+			<title>DQE</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:project</aspect>
+				<aspect>camifcm:client</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:actofcommitment">
+			<title>Act of commitment</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:project</aspect>
+				<aspect>camifcm:client</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:planarchitectproject">
+			<title>Plan architect project</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:project</aspect>
+				<aspect>camifcm:client</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="camifcm:customerpurchaserequirement">
+			<title>Customer purchase requirement</title>
+			<parent>camifcm:standarddocument</parent>
+			<mandatory-aspects>
+				<aspect>camifcm:project</aspect>
+				<aspect>camifcm:client</aspect>
+			</mandatory-aspects>
+		</type>
+		<!-- !DOCUMENT PROJET -->
+	</types>
+
+	<aspects>
+		<!-- FOURNISSEUR -->
+		<aspect name="camifcm:provider">
+			<title>Provider</title>
+			<properties>
+				<property name="camifcm:providernumber">
+					<title>Provider number</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="camifcm:providercategory">
+					<title>Provider category</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="camifcm:providername">
+					<title>Provider name</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+			</properties>
+		</aspect>
+		<!-- !FOURNISSEUR -->
+		
+		<!-- DIVERS -->
+		<aspect name="camifcm:divers">
+			<title>Divers</title>
+			<properties>
+				<property name="camifcm:devisnumber">
+					<title>Devis number</title>
+					<type>d:text</type>
+				</property>
+				<property name="camifcm:contractnumber">
+					<title>Contract number</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+			</properties>
+		</aspect>
+		<!-- !DIVERS -->
+		
+		<!-- PROJET -->
+		<aspect name="camifcm:project">
+			<title>Project</title>
+			<properties>
+				<property name="camifcm:projectnumber">
+					<title>Project number</title>
+					<type>d:text</type>
+				</property>
+				<property name="camifcm:sellingsite">
+					<title>Selling site</title>
+					<type>d:text</type>
+				</property>
+				<property name="camifcm:casenumber">
+					<title>Case number</title>
+					<type>d:text</type>
+				</property>
+			</properties>
+		</aspect>
+		<!-- !PROJET -->
+		
+		<!-- VALIDITE -->
+		<aspect name="camifcm:validity">
+			<title>Validity</title>
+			<properties>
+				<property name="camifcm:startdateofvalidity">
+					<title>Start date of validity</title>
+					<type>d:datetime</type>
+				</property>
+				<property name="camifcm:enddateofvalidity">
+					<title>End date of validity</title>
+					<type>d:datetime</type>
+				</property>
+			</properties>
+		</aspect>
+		<!-- !VALIDITE -->
+		
+		<!-- ARTICLE -->
+		<aspect name="camifcm:article">
+			<title>Article</title>
+			<properties>
+				<property name="camifcm:masterarticleref">
+					<title>Master article ref</title>
+					<type>d:text</type>
+					<multiple>true</multiple>
+				</property>
+				<property name="camifcm:articleref">
+					<title>Article ref</title>
+					<type>d:text</type>
+					<multiple>true</multiple>
+				</property>
+				<property name="camifcm:universe">
+					<title>Universe</title>
+					<type>d:text</type> <!-- FIXME : No type? -->
+				</property>
+				<property name="camifcm:sector">
+					<title>Sector</title>
+					<type>d:text</type>	<!-- FIXME : No type? -->
+				</property>
+				<property name="camifcm:designation">
+					<title>Designation</title>
+					<type>d:text</type>	<!-- FIXME : No type? -->
+				</property>
+			</properties>
+		</aspect>
+		<!-- !ARTICLE -->
+		
+		<!-- CLIENT -->
+		<aspect name="camifcm:client">
+			<title>Client</title>
+			<properties>
+				<property name="camifcm:doclientnumber">
+					<title>DO client number</title>
+					<type>d:text</type>
+				</property>
+				<property name="camifcm:doclientname">
+					<title>DO client name</title>
+					<type>d:text</type>
+				</property>
+				<property name="camifcm:deliveredclientnumber">
+					<title>Delivered client number</title>
+					<type>d:text</type>
+				</property>
+				<property name="camifcm:deliveredclientname">
+					<title>Delivered client name</title>
+					<type>d:text</type>
+				</property>
+			</properties>
+		</aspect>
+		<!-- !CLIENT -->
+	</aspects>
+</model>

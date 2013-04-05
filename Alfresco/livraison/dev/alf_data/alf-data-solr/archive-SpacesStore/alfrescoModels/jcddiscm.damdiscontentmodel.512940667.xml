@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.alfresco.org/model/dictionary/1.0" name="jcddiscm:damdiscontentmodel">
+    <description>DIS Content Model</description>
+    <author>JCDECAUX</author>
+    <published>2012-12-05</published>
+    <version>1.0</version>
+    <imports>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <import uri="http://www.jcdecaux.com/commoncontent/1.0" prefix="jcdcommoncm"/>
+    </imports>
+    <namespaces>
+        <namespace uri="http://www.jcdecaux.com/discontent/1.0" prefix="jcddiscm"/>
+    </namespaces>
+    <data-types/>
+    <constraints/>
+    <types>
+        <type name="jcddiscm:content">
+            <title>DIS Content</title>
+            <parent>jcdcommoncm:content</parent>
+            <properties/>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects/>
+        </type>
+        <type name="jcddiscm:image">
+            <title>DIS Image</title>
+            <parent>jcdcommoncm:image</parent>
+            <properties/>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects/>
+        </type>
+        <type name="jcddiscm:flash">
+            <title>DIS Flash Media</title>
+            <parent>jcdcommoncm:flash</parent>
+            <properties/>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects/>
+        </type>
+        <type name="jcddiscm:video">
+            <title>DIS Flash Media</title>
+            <parent>jcdcommoncm:video</parent>
+            <properties/>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects/>
+        </type>
+    </types>
+    <aspects/>
+</model>

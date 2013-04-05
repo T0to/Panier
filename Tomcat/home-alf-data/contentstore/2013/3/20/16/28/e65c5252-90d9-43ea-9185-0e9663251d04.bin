@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<name>Notice_d_utilisation_7151_78070</name>
+<titre>Notice d'utilisation 7151 78070</titre>
+<description>notice uliisation AM78070</description>
+<createur>Marylène DAUNIZEAU</createur>
+<infosgenerique>
+<type>Notice d'utilisation</type>
+<origine>X3</origine>
+</infosgenerique>
+<fournisseur>
+<num>7151</num>
+<cat>MARCH</cat>
+<nom>PHILIPS EGP</nom>
+</fournisseur>
+<divers>
+</divers>
+<projet>
+</projet>
+<validite>
+<start>2011-01-01</start>
+<end>2010-12-31</end>
+</validite>
+<articleMaitre>78070</articleMaitre>
+<article>
+<ref>287849M</ref>
+<univers>803</univers>
+<secteur>80303</secteur>
+<designation>Baladeur CD MP3 Philips  EXP2540</designation>
+</article>
+<client>
+</client>
+</document>

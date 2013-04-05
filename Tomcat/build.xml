@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<project name="Deploy Tomcat" default="clean-tomcat-home" basedir=".">
+	<taskdef resource="net/sf/antcontrib/antlib.xml" />
+	<property file="build.properties" />
+	
+	<property name="project.dir" value="."/>
+	<property name="home.dir" value="${project.dir}/home"/>
+	<property name="home.alf_data" value="${project.dir}/home-alf-data/alf_data"/>
+	<property name="license.src.dir" value="${project.dir}/license"/>
+	<property name="license.home.dest.dir" value="${home.dir}/tomcat/shared/classes/alfresco/extension/license"/>
+	<property name="home.alf-data.solr.dir" value="${project.dir}/home/alf_data/alf-data-solr"/>
+	<property name="home.alf-data.keys-store.solr.dir" value="${project.dir}/home-alf-data-keys-store"/>
+	
+	<property name="home.solr.archive.indexes.dir" value="${home.alf-data.solr.dir}/archive-SpacesStore/index"/>
+	<property name="home.solr.archive.spellchecker.dir" value="${home.alf-data.solr.dir}/archive-SpacesStore/spellchecker"/>
+	
+	<property name="home.solr.workspace.indexes.dir" value="${home.alf-data.solr.dir}/workspace-SpacesStore/index"/>
+	<property name="home.solr.workspace.spellchecker.dir" value="${home.alf-data.solr.dir}/workspace-SpacesStore/spellchecker"/>
+	
+	
+	
+	
+	
+	
+	<target name="rmdir-home">
+		<delete dir="${home.dir}" />
+	</target>
+	
+	<target name="mkdir-ref">
+		 <mkdir dir="${ref.dir}" />
+	</target>
+	
+	<target name="mkdir-home">
+		 <mkdir dir="${home.dir}" />
+	</target>
+	
+	
+	
+	
+	
+	<target name="clean-tomcat-home" depends="rmdir-home,mkdir-home">
+		<untar compression="gzip" src="${alfresco-bundle-tomcat-reference}" dest="${home.dir}" />
+		
+		<!--
+		<chmod perm="+x">
+			<fileset dir="${home.dir}" includes="*.sh" />
+		</chmod>
+		<chmod perm="+x">
+			<fileset dir="${home.dir}/tomcat/bin" includes="*.sh" />
+		</chmod>
+		-->
+		<delete dir="${license.home.dest.dir}" />
+		
+		<mkdir dir="${license.home.dest.dir}" />
+		
+		
+		
+		
+		<!--<copydir dest="${license.home.dest.dir}" src="${license.src.dir}"></copydir>-->
+				
+		
+				<antcall target="clean-home-mysql-db" />
+				<antcall target="clean-solr-indexes"/>
+			
+			
+	</target>
+	
+
+	
+	<target name="clean-home-mysql-db">
+		<delete dir="${home.alf_data}"/>
+		<exec executable="/bin/bash">
+		  <arg value="-c" />
+		  <arg value="mysql -u${dev.mysql.user.root} -p${dev.mysql.password.root} &lt; home-sql/db_remove.sql" />
+		</exec>
+		
+		<exec executable="/bin/bash">
+		  <arg value="-c" />
+		  <arg value="mysql -u${dev.mysql.user.root} -p${dev.mysql.password.root} &lt; home-sql/db_setup.sql" />
+		</exec>
+	<!--	<if>
+			<equals arg1="${use.dump}" arg2="true" />
+			<then>
+				
+				
+				<exec executable="/bin/bash">
+				  <arg value="-c" />
+				  <arg value="mysql -u${dev.mysql.user} -p${dev.mysql.password} ${dev.dbname} &lt; home-sql/${dev.mysql.dump}" />
+				</exec>
+				
+				<mkdir dir="${home.alf_data}" />
+				<untar compression="gzip" src="${home.dir}/home-alf-data/${dev.alfData.dump}" dest="${home.alf_data}" />
+			</then>
+		</if> -->
+		</target>
+	
+		<target name="clean-solr-indexes">
+			
+			<delete dir="${home.solr.archive.indexes.dir}"/>			
+			<delete dir="${home.solr.archive.spellchecker.dir}"/>
+			
+			<delete dir="${home.solr.workspace.indexes.dir}"/>			
+			<delete dir="${home.solr.workspace.spellchecker.dir}"/>		
+		</target>
+</project>
+

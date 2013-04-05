@@ -1,0 +1,6 @@
+<webscript>
+   <shortname>My Selection</shortname>
+   <description>Dashlet to list documents associated with the current user</description>
+   <family>user-dashlet</family>
+   <url>/components/dashlets/my-selection</url>
+</webscript>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.alfresco.org/model/dictionary/1.0" name="ixsolr:solrModel">
+    <description>Ixxus Solr Model</description>
+    <author>Dan Tuffery</author>
+    <version>1.0</version>
+    <imports>
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+    </imports>
+    <namespaces>
+        <namespace uri="http://www.ixxus.com/model/ixxus-solr/1.0" prefix="ixsolr"/>
+        <namespace uri="http://www.ixxus.com/model/ixxus/1.0" prefix="ix"/>
+    </namespaces>
+    <data-types/>
+    <constraints>
+        <constraint name="ixsolr:dateGaps" type="LIST">
+            <parameter name="allowedValues">
+                <list>
+                    <value>Day</value>
+                    <value>Month</value>
+                    <value>Year</value>
+                </list>
+            </parameter>
+        </constraint>
+    </constraints>
+    <types>
+        <type name="ixsolr:facetField">
+            <title>Facet Field</title>
+            <parent>cm:content</parent>
+            <properties>
+                <property name="ixsolr:facetType">
+                    <title>Facet Type</title>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                </property>
+                <property name="ixsolr:fieldName">
+                    <title>Field Name</title>
+                    <type>d:text</type>
+                    <mandatory enforced="true">true</mandatory>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                </property>
+                <property name="ixsolr:minCount">
+                    <title>Minimum Count</title>
+                    <type>d:int</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                </property>
+                <property name="ixsolr:displayName">
+                    <title>Display Name</title>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                </property>
+                <property name="ixsolr:limit">
+                    <title>Limit</title>
+                    <type>d:int</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                </property>
+                <property name="ixsolr:dateGapType">
+                    <title>Date Gap Type</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                    <constraints>
+                        <constraint name="ixsolr:dateGapType_anon_54" ref="ixsolr:dateGaps"/>
+                    </constraints>
+                </property>
+                <property name="ixsolr:dateStart">
+                    <title>Date Start</title>
+                    <type>d:date</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                </property>
+                <property name="ixsolr:dateGap">
+                    <title>Date Gap</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                </property>
+                <property name="ixsolr:dateEnd">
+                    <title>Date End</title>
+                    <type>d:date</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                </property>
+                <property name="ixsolr:repositorySearch">
+                    <title>Repository Search</title>
+                    <type>d:boolean</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                </property>
+                <property name="ixsolr:allSites">
+                    <title>All Sites</title>
+                    <type>d:boolean</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                </property>
+                <property name="ixsolr:sites">
+                    <title>Sites</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <multiple>true</multiple>
+                    <index enabled="false">
+                        <atomic>false</atomic>
+                        <stored>false</stored>
+                        <tokenised>FALSE</tokenised>
+                    </index>
+                </property>
+            </properties>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects/>
+        </type>
+    </types>
+    <aspects/>
+</model>
